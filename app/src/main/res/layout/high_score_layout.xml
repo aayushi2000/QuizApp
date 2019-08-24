@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#320227"
+            android:padding="5dp"
+            android:id="@+id/header_high_score"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="RANK"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:textColor="#ffff"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="NAME"
+                android:textColor="#ffff"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ffff"
+                android:layout_gravity="center"
+                android:text="SCORE"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ffff"
+                android:text="CATEGORY"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/highscore_list"
+            android:layout_below="@+id/header_high_score">
+
+        </ListView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Main Menu"
+            android:onClick="back_highscore"
+            android:id="@+id/back"/>
+    </RelativeLayout>
+
+</RelativeLayout>
